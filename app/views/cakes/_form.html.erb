@@ -1,26 +1,21 @@
-<%= form_for(@cake, html: { multipart: true }) do |f| %>
-  <% if @cake.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@cake.errors.count, "error") %> prohibited this cake from being saved:</h2>
-
-      <ul>
-      <% @cake.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for(@cake, html: { multipart: true, class: 'form-horizontal' }) do |f| %>
+  <fieldset>
+    <div class="control-group">
+      <%= f.label :name, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :name, :class => "input-xxlarge" %>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :photo %><br />
-    <%= f.file_field :photo %>
-    <%= f.hidden_field :photo_cache %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+    <div class="control-group">
+      <%= f.label :photo, :class => "control-label" %>
+      <div class="controls">
+        <%= f.file_field :photo, :class => "input-xxlarge" %>
+        <%= f.hidden_field :photo_cache %>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="<%= url_for @cake %>" class="btn">Cancel</a>
   </div>
 <% end %>

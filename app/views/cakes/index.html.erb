@@ -1,23 +1,22 @@
-<h1>Listing cakes</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @cakes.each do |cake| %>
-  <tr>
-    <td><%= cake.name %></td>
-    <td><%= link_to 'Show', cake %></td>
-    <td><%= link_to 'Edit', edit_cake_path(cake) %></td>
-    <td><%= link_to 'Destroy', cake, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Cake', new_cake_path %>
+<div class="row">
+  <div class="span12">
+    <div id="cakes-div" class="row">
+      <div class="span12">
+        <%= link_to "new", new_cake_path %>
+      <ul class="thumbnails">
+        <% @cakes.each do |cake| %>
+          <div class="span4">
+            <div class="thumbnail">
+              <a href="<%= url_for cake %>"><img src="" /></a>
+              <div class="caption">
+                <h3><a href="<%= url_for cake %>"><%= cake.name %></a></h3>
+                <p><a class="btn" href="<%= url_for cake %>">View</a></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>

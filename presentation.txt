@@ -1,0 +1,65 @@
+Rails Performance Optimization
+
+[links]
+http://retrofuturistictech.quora.com/Bouncing-Balls-in-the-Cloud
+http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html
+http://aphyr.com/posts/278-timelike-2-everything-fails-all-the-time
+https://blog.heroku.com/archives/2013/4/3/routing_and_web_performance_on_heroku_a_faq
+http://jdorfman.posthaven.com/medium-bitcoin-660x493-dot-jpg-cdn-vs-s3
+http://www.holovaty.com/writing/aws-notes/
+http://www.rubyops.net/gems/httperfrb
+http://pivotallabs.com/133-performance-and-scalability-make-your-app-just-fast-enough-in-an-agile-way/
+https://github.com/rails/rails-perftest
+http://rubylearning.com/blog/2011/08/14/performance-testing-rails-applications-how-to/
+https://github.com/sportngin/simple_benchmark
+http://www.slideshare.net/drhenner/optimize-the-obvious-7636674
+http://www.windycityrails.org/videos/2011/#2
+
+
+Intro
+ - Actually a testing talk
+
+When do you performance test
+ - At the end? Freak out!
+ - Proactive vs Reactive
+ - Premature optimization (see above)
+
+What does performance mean
+ - characterized by the amount of useful work accomplished by a computer system compared to the time and resources used.
+ - *Hero of the talk*
+ - Donald Knuth wrote, "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
+ - Optimizing up front is often regarded as breaking YouArentGonnaNeedIt (YAGNI).
+ - PrematureOptimization is an AntiPattern, since there is only cost and no benefit.
+
+Performance: Load
+ - How much work is there
+
+Performance: Utilization
+ - How much of the resources are in use
+
+Performance: Scalability
+ - How can we handle the load
+
+Performance: Throughput
+ - How many tasks can be done per unit of time
+
+Performance: Concurerency
+ - How many tasks can we do at once
+
+Performance: Capacity
+ - How big can our throughput go before things fall apart
+
+Sample application
+ - Show performance baseline
+
+Deploy application
+ - Check performance
+ - Explain network latency
+
+Switch from thin to unicorn
+
+Offload assets
+
+N+1 hunt
+
+Index hunt

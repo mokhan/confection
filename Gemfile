@@ -23,3 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'asset_sync'
 end
+
+group :production do
+  gem 'unicorn'
+end

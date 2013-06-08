@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="span1 pull-right">
+    <%= link_to "new", new_cake_path, class: 'btn' %>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <h1><%= @category.name %></h1>
+    <ul class="thumbnails">
+      <% @cakes.each do |cake| %>
+        <div class="span4">
+        <div class="thumbnail">
+          <a href="<%= url_for cake %>"><img src="<%= cake.photo.url %>" /></a>
+          <div class="caption">
+            <h3><a href="<%= url_for cake %>"><%= cake.name %></a></h3>
+            <p><a class="btn" href="<%= url_for cake %>">View</a></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </ul>
+  </div>
+</div>

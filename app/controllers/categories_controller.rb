@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
-  def index
-    
+  def show
+    @category = Category.find_by_slug(params[:id])
+    @cakes = @category.cakes
   end
 end

@@ -17,3 +17,4 @@
 database.yml
 .env
 /public/assets
+script/heroku_setup.sh

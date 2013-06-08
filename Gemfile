@@ -5,7 +5,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'fog'
 gem 'rmagick'
-gem 'sqlite3'
+gem 'sqlite3', :groups => [:development, :test]
 gem 'pg'
 gem 'kaminari'
 gem 'bootstrap-sass'

@@ -4,7 +4,6 @@ class PhotoUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
   include CarrierWave::MimeTypes
 
-  storage :fog
   process :set_content_type
 
   version :hero do 

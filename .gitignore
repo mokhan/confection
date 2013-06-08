@@ -16,3 +16,4 @@
 /public/uploads
 database.yml
 .env
+/public/assets

@@ -13,6 +13,12 @@
         <%= f.hidden_field :photo_cache %>
       </div>
     </div>
+    <div class="control-group">
+      <%= f.label :category_id, :class => "control-label" %>
+      <div class="controls">
+        <%= f.select :category_id, options_from_collection_for_select(@categories, :id, :name) %>
+      </div>
+    </div>
   </fieldset>
   <div class="form-actions">
     <button type="submit" class="btn btn-primary">Save</button>

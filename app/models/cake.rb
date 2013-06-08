@@ -1,5 +1,6 @@
 class Cake < ActiveRecord::Base
-  attr_accessible :name, :photo, :photo_cache
+  attr_accessible :name, :photo, :photo_cache, :category_id
+  belongs_to :category
   mount_uploader :photo, PhotoUploader
 
   def slug

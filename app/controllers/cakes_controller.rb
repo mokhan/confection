@@ -9,10 +9,12 @@ class CakesController < ApplicationController
 
   def new
     @cake = Cake.new
+    @categories = Category.all
   end
 
   def edit
     @cake = Cake.find(params[:id])
+    @categories = Category.all
   end
 
   def create

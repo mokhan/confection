@@ -6,11 +6,15 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'fog'
 gem 'rmagick'
-gem 'sqlite3', :groups => [:development, :test]
 gem 'pg'
 gem 'kaminari'
 gem 'bootstrap-sass'
+gem 'sqlite3', :groups => [:development, :test]
 gem 'dotenv-rails', :groups => [:development, :test]
+
+group :development do
+  gem 'rack-mini-profiler'
+end
 
 group :test do
   gem 'rspec-rails'

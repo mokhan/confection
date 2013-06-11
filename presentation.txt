@@ -17,19 +17,13 @@ http://www.windycityrails.org/videos/2011/#2
 
 
 Intro
- - Actually a testing talk
-
-When do you performance test
- - At the end? Freak out!
- - Proactive vs Reactive
- - Premature optimization (see above)
+ - Who I am
+ - What I work on
+ - *Hero of the talk*
+ - Donald Knuth wrote, "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
 
 What does performance mean
  - characterized by the amount of useful work accomplished by a computer system compared to the time and resources used.
- - *Hero of the talk*
- - Donald Knuth wrote, "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
- - Optimizing up front is often regarded as breaking YouArentGonnaNeedIt (YAGNI).
- - PrematureOptimization is an AntiPattern, since there is only cost and no benefit.
 
 Performance: Load
  - How much work is there
@@ -48,6 +42,21 @@ Performance: Concurerency
 
 Performance: Capacity
  - How big can our throughput go before things fall apart
+
+Actually...
+ - Another testing talk
+ - Optimizing up front is often regarded as breaking YouArentGonnaNeedIt (YAGNI).
+ - PrematureOptimization is an AntiPattern, since there is only cost and no benefit.
+
+Why does performance matter
+ - Slow page respone time results in increased page abandonment
+ - Source: http://blog.kissmetrics.com/loading-time/?wide=1
+ - Page size: http://httparchive.org/interesting.php?a=All&l=Jun%201%202013&s=All
+
+When do you performance test
+ - At the end? Freak out!
+ - Proactive vs Reactive
+ - Premature optimization (see above)
 
 Sample application
  - Show performance baseline

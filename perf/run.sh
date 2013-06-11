@@ -1,6 +1,6 @@
 ENDPOINT="http://www.google.ca/"
-REQUEST_COUNT="100"
-THREAD_COUNT="10"
+REQUEST_COUNT="500"
+THREAD_COUNT="25"
 
 FILENAME="$REQUEST_COUNT.$THREAD_COUNT.$(date +%s)"
 
@@ -21,7 +21,7 @@ mkdir -p graphs
 # create graph
 gnuplot << EOF
   # output as png image
-  set terminal png
+  set terminal jpeg
   # save file to "results.png"
   set output "graphs/$FILENAME.png"
   # graph title

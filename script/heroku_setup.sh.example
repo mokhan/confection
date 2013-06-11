@@ -1,4 +1,7 @@
 heroku labs:enable log-runtime-metrics
+heroku addons:add newrelic
+heroku addons:add memcachier
+heroku addons:add papertrail
 heroku config:set FOG_PROVIDER=AWS
 heroku config:set AWS_ACCESS_KEY_ID=
 heroku config:set AWS_SECRET_ACCESS_KEY=

@@ -45,6 +45,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    dalli (2.6.4)
     diff-lcs (1.2.4)
     dotenv (0.7.0)
     dotenv-rails (0.7.0)
@@ -164,6 +165,7 @@ DEPENDENCIES
   bootstrap-sass
   carrierwave
   coffee-rails (~> 3.2.1)
+  dalli
   dotenv-rails
   factory_girl_rails
   fog

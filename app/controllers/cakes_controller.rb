@@ -20,9 +20,9 @@ class CakesController < ApplicationController
   def create
     @cake = Cake.new(params[:cake])
     if @cake.save
-      redirect_to @cake, notice: 'Cake was successfully created.' 
+      redirect_to @cake, notice: 'Cake was successfully created.'
     else
-      render action: "new" 
+      render action: "new"
     end
   end
 

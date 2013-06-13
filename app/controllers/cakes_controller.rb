@@ -15,12 +15,12 @@ class CakesController < ApplicationController
   end
 
   def edit
-    @cake = Cake.find(params[:id])
+    @cake = current_user.cakes.find(params[:id])
     @categories = Category.all
   end
 
   def create
-    @cake = Cake.new(params[:cake])
+    @cake = current_user.cakes.create(params[:cake])
     if @cake.save
       redirect_to @cake, notice: 'Cake was successfully created.'
     else
@@ -29,7 +29,7 @@ class CakesController < ApplicationController
   end
 
   def update
-    @cake = Cake.find(params[:id])
+    @cake = current_user.cakes.find(params[:id])
     if @cake.update_attributes(params[:cake])
       redirect_to @cake, notice: 'Cake was successfully updated.'
     else
@@ -38,7 +38,7 @@ class CakesController < ApplicationController
   end
 
   def destroy
-    @cake = Cake.find(params[:id])
+    @cake = current_user.cakes.find(params[:id])
     @cake.destroy
     redirect_to cakes_url
   end

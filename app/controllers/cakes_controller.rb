@@ -2,7 +2,12 @@ class CakesController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
 
   def index
-    @cakes = Cake.all
+    @cakes = Cake.all(include: :category)
+  end
+
+  def n_plus_one
+    @cakes = Cake.all(include: :category)
+    render :index
   end
 
   def show

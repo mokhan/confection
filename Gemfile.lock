@@ -32,6 +32,7 @@ GEM
     asset_sync (0.5.4)
       activemodel
       fog
+    bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -46,6 +47,11 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     dalli (2.6.4)
+    devise (2.2.4)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
     diff-lcs (1.2.4)
     dotenv (0.7.0)
     dotenv-rails (0.7.0)
@@ -91,6 +97,7 @@ GEM
     net-ssh (2.6.7)
     newrelic_rpm (3.6.3.111)
     nokogiri (1.5.10)
+    orm_adapter (0.4.0)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -158,6 +165,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -168,6 +177,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   dalli
+  devise
   dotenv-rails
   factory_girl_rails
   fog

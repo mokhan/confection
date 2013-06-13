@@ -9,6 +9,7 @@ gem 'rmagick'
 gem 'pg'
 gem 'kaminari'
 gem 'bootstrap-sass'
+gem 'devise'
 gem 'sqlite3', :groups => [:development, :test]
 gem 'dotenv-rails', :groups => [:development, :test]
 

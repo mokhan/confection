@@ -1,4 +1,6 @@
 class CakesController < ApplicationController
+  before_filter :authenticate_user!, except: [:index, :show]
+
   def index
     @cakes = Cake.all
   end

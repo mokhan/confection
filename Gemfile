@@ -16,6 +16,7 @@ gem 'dotenv-rails', :groups => [:development, :test]
 group :development do
   gem 'rack-mini-profiler'
   gem 'ffaker'
+  gem 'rails-erd'
 end
 
 group :test do

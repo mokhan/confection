@@ -17,6 +17,7 @@ group :development do
   gem 'rack-mini-profiler'
   gem 'ffaker'
   gem 'rails-erd'
+  gem 'lol_dba'
 end
 
 group :test do

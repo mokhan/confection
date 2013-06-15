@@ -2,7 +2,7 @@ class CakesController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
 
   def index
-    @cakes = Cake.limit(10).order(:updated_at).all(include: [:category, :user])
+    @cakes = Cake.limit(10).order(:updated_at).all(include: [:user])
   end
 
   def n_plus_one

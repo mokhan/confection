@@ -1,0 +1,1 @@
+config.action_controller.asset_host = ENV['ASSET_HOST'] 

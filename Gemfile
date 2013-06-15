@@ -18,6 +18,7 @@ group :development do
   gem 'ffaker'
   gem 'rails-erd'
   gem 'lol_dba'
+  gem 'bullet'
 end
 
 group :test do

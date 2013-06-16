@@ -14,7 +14,7 @@ unless Category.any?
   ])
 end
 
-(1..10).each do |x|
+(1..1000).each do |x|
   cake = Cake.create(name: Faker::Lorem.word, category_id: x % 9, remote_photo_url: 'http://d1cbrqorkyx7do.cloudfront.net/uploads/cake/photo/1/hero_nailah_cake.jpg')
   cake.user = User.create!(email: Faker::Internet.email, password: 'password', password_confirmation: 'password')
   cake.save!

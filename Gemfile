@@ -37,4 +37,5 @@ group :production do
   gem 'unicorn'
   gem 'newrelic_rpm'
   gem 'dalli'
+  gem 'ffaker'
 end

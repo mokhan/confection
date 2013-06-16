@@ -1,5 +1,5 @@
 class Cake < ActiveRecord::Base
-  attr_accessible :name, :photo, :photo_cache, :category_id
+  attr_accessible :name, :photo, :photo_cache, :category_id, :remote_photo_url
   belongs_to :category
   belongs_to :user
   mount_uploader :photo, PhotoUploader

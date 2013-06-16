@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'sqlite3', :groups => [:development, :test]
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dalli'
 
 group :development do
   gem 'rack-mini-profiler'
@@ -38,4 +39,5 @@ group :production do
   gem 'newrelic_rpm'
   gem 'dalli'
   gem 'ffaker'
+  gem 'memcachier'
 end

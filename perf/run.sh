@@ -1,5 +1,5 @@
-ENDPOINT="http://www.google.ca/"
-REQUEST_COUNT="500"
+ENDPOINT="http://confection.herokuapp.com/"
+REQUEST_COUNT="1000"
 THREAD_COUNT="25"
 
 FILENAME="$REQUEST_COUNT.$THREAD_COUNT.$(date +%s)"

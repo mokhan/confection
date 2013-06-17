@@ -1,0 +1,56 @@
+λ  ab -n 1000 -c 25 http://confection.heroku.com/
+This is ApacheBench, Version 2.3 <$Revision: 1178079 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking confection.heroku.com (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        nginx
+Server Hostname:        confection.heroku.com
+Server Port:            80
+
+Document Path:          /
+Document Length:        0 bytes
+
+Concurrency Level:      25
+Time taken for tests:   22.217 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      168000 bytes
+HTML transferred:       0 bytes
+Requests per second:    45.01 [#/sec] (mean)
+Time per request:       555.437 [ms] (mean)
+Time per request:       22.217 [ms] (mean, across all concurrent requests)
+Transfer rate:          7.38 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       94  221 502.4    127    4704
+Processing:   104  321 705.1    168   10605
+Waiting:      103  262 404.2    167   10602
+Total:        209  542 947.5    303   13788
+
+Percentage of the requests served within a certain time (ms)
+  50%    303
+  66%    350
+  75%    434
+  80%    480
+  90%    724
+  95%   1363
+  98%   5133
+  99%   5594
+ 100%  13788 (longest request)

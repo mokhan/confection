@@ -35,7 +35,8 @@ group :assets do
 end
 
 group :production do
-  gem 'unicorn'
+  gem 'thin'
+  #gem 'unicorn'
   gem 'newrelic_rpm'
   gem 'dalli'
   gem 'ffaker'

@@ -22,6 +22,6 @@ This is an example application that shows you how to use AWS S3 and CloudFront t
 
 ** Never check your AWS security credentials in to a public repository **
 
-[Demo](http://confection.herokuapp.com)
+[Demo](https://confection.herokuapp.com)
 
 Enjoy!
